@@ -19,6 +19,8 @@ export function Post({ post, onLike }: PostProps) {
           <p className="text-xs text-gray-500">{new Date(post.createdAt).toLocaleString()}</p>
         </div>
       </div>
+      {/* Post content */}
+      <p className="mb-2 text-sm text-gray-700">{post.content}</p> {/* Added content here */}
       <Image
         src={post.image}
         alt="Post image"
